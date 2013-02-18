@@ -1,4 +1,3 @@
-
 // This uses require.js to structure javascript:
 // http://requirejs.org/docs/api.html#define
 
@@ -300,13 +299,13 @@ define(function(require) {
 	canvas_y = event.pageY;
 
 	var tmp=75;
-
+	var tmp1=425;
 	for(i =0;i<6;i++)
 	{
 		for(j=0;j<6;j++)
 		{
 	
-			if(canvas_x>(tmp-7 +j*35) && canvas_x<(tmp+7 +j*35) && canvas_y>(tmp-7 +i*35) && canvas_y<(tmp+7 +i*35))
+			if(canvas_x>(tmp1-7 +j*35) && canvas_x<(tmp1+7 +j*35) && canvas_y>(tmp-7 +i*35) && canvas_y<(tmp+7 +i*35))
 			{
 				setColor(i,j);					
 			}
