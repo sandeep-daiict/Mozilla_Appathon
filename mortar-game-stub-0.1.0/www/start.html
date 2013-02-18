@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body background="abc.jpg">
+    <!-- Uncomment this button to install locally without going
+         through the marketpace (see app.js) -->
+    <!-- <button id="install-btn">Install</button>     -->
+
+    <!-- Write your application here -->
+<div id="header">
+<div id="top" >
+	<canvas id="myCanvas" width="512" height="350" style="border:1px solid #d3d3d3;">
+	Your browser does not support the HTML5 canvas tag.</canvas>
+
+</div>
+
+<div id="low" width="100%" height="100" style="float:bottom;clear:both;">
+
+
+<p id="player" style="color:LightGray;text-align:center;font-weight:bold;font-style:italic;"></p>
+<span id="p1" style="color:LightCoral;float:left;font-weight:bold;margin-left:20px;"></span>
+<span id="p2" style="color:MediumAquaMarine;float:right;font-weight:bold;margin-right:20px;"></span>
+
+
+</div>
+</div>
+
+    <!-- Using require.js, a module system for javascript, include the
+         js files. This loads "main.js", which in turn can load other
+         files, all handled by require.js:
+         http://requirejs.org/docs/api.html#jsfiles -->
+    <script type="text/javascript"
+            data-main="js/init.js"
+            src="js/lib/require.js"></script>
+  </body>
+</html>
