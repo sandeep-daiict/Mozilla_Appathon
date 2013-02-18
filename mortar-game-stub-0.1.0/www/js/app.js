@@ -1,6 +1,6 @@
 // This uses require.js to structure javascript:
 // http://requirejs.org/docs/api.html#define
-
+//Game By Nightcoderzzz
 // A cross-browser requestAnimationFrame
 // See https://hacks.mozilla.org/2011/08/animating-with-javascript-from-setinterval-to-requestanimationframe/
 var requestAnimFrame = (function(){
