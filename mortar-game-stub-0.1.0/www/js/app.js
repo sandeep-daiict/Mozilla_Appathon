@@ -37,6 +37,7 @@ define(function(require) {
 
 	var c=document.getElementById("myCanvas");
 	c.width=screen.width;
+	var size=500;
 	var ctx=c.getContext("2d");
 	
 	var flag=0;
@@ -82,7 +83,7 @@ define(function(require) {
 	    line[i][j] = 0;
 	  }
 
-	var cord_x=75;
+	var cord_x=75+size;
 	var cord_y=75;
 	
 	for(i=0;i<6;i++)
@@ -97,7 +98,7 @@ define(function(require) {
 
 			cord_x+=35;
 		}
-		cord_x=75;
+		cord_x=75+size;
 		cord_y+=35;
 	}
 
@@ -300,7 +301,7 @@ define(function(require) {
 	canvas_y = event.pageY;
 
 	var tmp=75;
-	var tmp1=425;
+	var tmp1=75+size;
 	for(i =0;i<6;i++)
 	{
 		for(j=0;j<6;j++)
