@@ -83,7 +83,7 @@ define(function(require) {
 
 	var cord_x=75;
 	var cord_y=75;
-	//alert("Here");
+	
 	for(i=0;i<6;i++)
 	{
 		for(j=0;j<6;j++)
