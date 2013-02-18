@@ -149,7 +149,7 @@ define(function(require) {
 
 						ctx.font="25px Arial";
 						ctx.fillStyle='LightCoral';
-						ctx.fillText("1",75+(j*35)+7,75+(i*35)+27);
+						ctx.fillText("1",size+75+(j*35)+7,75+(i*35)+27);
 						
 						aud=document.createElement('audio');
 						aud.src='sq.ogg';
@@ -169,7 +169,7 @@ define(function(require) {
 
 						ctx.font="25px Arial";
 						ctx.fillStyle='MediumAquaMarine';
-						ctx.fillText("2",75+(j*35)+7,75+(i*35)+27);
+						ctx.fillText("2",size+75+(j*35)+7,75+(i*35)+27);
 
 						aud=document.createElement('audio');
 						aud.src='sq.ogg';
@@ -374,7 +374,7 @@ define(function(require) {
 					aud.play();
 					x[i][j]++;
 							ctx.beginPath();
-							ctx.arc(75+j*35,75+i*35,5,0,2*Math.PI);
+							ctx.arc(size+75+j*35,75+i*35,5,0,2*Math.PI);
 							ctx.fillStyle = 'green';
 							ctx.fill();
 							ctx.stroke();
@@ -413,8 +413,8 @@ define(function(require) {
 							setDotNew(i1, j1);
 							setDotNew(i, j);
 							ctx.beginPath();
-							ctx.moveTo(75+(j1*35)+2,75+(i1*35)+2);
-							ctx.lineTo(75+(j*35)-2,75+(i*35)-2);
+							ctx.moveTo(size+75+(j1*35)+2,75+(i1*35)+2);
+							ctx.lineTo(size+75+(j*35)-2,75+(i*35)-2);
 				
 							ctx.lineWidth=3;
 							ctx.strokeStyle='LightGoldenRodYellow';
@@ -442,8 +442,8 @@ define(function(require) {
 							setDotNew(i1, j1);
 							setDotNew(i, j);
 							ctx.beginPath();
-							ctx.moveTo(75+(j1*35)+2,75+(i1*35)+2);
-							ctx.lineTo(75+(j*35)-2,75+(i*35)-2);
+							ctx.moveTo(size+75+(j1*35)+2,75+(i1*35)+2);
+							ctx.lineTo(size+75+(j*35)-2,75+(i*35)-2);
 				
 							ctx.lineWidth=3;
 							ctx.strokeStyle='LightGoldenRodYellow';
@@ -478,7 +478,7 @@ define(function(require) {
 						if(x[x1][y1]==0)
 						{
 							ctx.beginPath();
-							ctx.arc(75+y1*35,75+x1*35,5,0,2*Math.PI);
+							ctx.arc(size+75+y1*35,75+x1*35,5,0,2*Math.PI);
 							ctx.fillStyle = 'LightGray';
 							ctx.fill();
 							ctx.stroke();
@@ -486,7 +486,7 @@ define(function(require) {
 						else
 						{
 							ctx.beginPath();
-							ctx.arc(75+y1*35,75+x1*35,5,0,2*Math.PI);
+							ctx.arc(size+75+y1*35,75+x1*35,5,0,2*Math.PI);
 							ctx.fillStyle = 'DeepSkyBlue';
 							ctx.fill();
 							ctx.stroke();
@@ -504,7 +504,7 @@ define(function(require) {
 					if(x[i][j]==2)	
 					{
 							ctx.beginPath();
-							ctx.arc(75+y1*35,75+x1*35,5,0,2*Math.PI);
+							ctx.arc(size+75+y1*35,75+x1*35,5,0,2*Math.PI);
 							ctx.fillStyle = 'red';
 							ctx.fill();
 							ctx.stroke();
@@ -512,7 +512,7 @@ define(function(require) {
 					else
 					{
 							ctx.beginPath();
-							ctx.arc(75+y1*35,75+x1*35,5,0,2*Math.PI);
+							ctx.arc(size+75+y1*35,75+x1*35,5,0,2*Math.PI);
 							ctx.fillStyle = 'DeepSkyBlue';
 							ctx.fill();
 							ctx.stroke();
@@ -523,7 +523,7 @@ define(function(require) {
 					if(x[i][j]==3)	
 					{
 							ctx.beginPath();
-							ctx.arc(75+y1*35,75+x1*35,5,0,2*Math.PI);
+							ctx.arc(size+75+y1*35,75+x1*35,5,0,2*Math.PI);
 							ctx.fillStyle = 'red';
 							ctx.fill();
 							ctx.stroke();
@@ -531,7 +531,7 @@ define(function(require) {
 					else
 					{
 							ctx.beginPath();
-							ctx.arc(75+y1*35,75+x1*35,5,0,2*Math.PI);
+							ctx.arc(size+75+y1*35,75+x1*35,5,0,2*Math.PI);
 							ctx.fillStyle = 'DeepSkyBlue';
 							ctx.fill();
 							ctx.stroke();
@@ -543,7 +543,7 @@ define(function(require) {
 					if(x[i][j]==4)	
 					{
 							ctx.beginPath();
-							ctx.arc(75+y1*35,75+x1*35,5,0,2*Math.PI);
+							ctx.arc(size+75+y1*35,75+x1*35,5,0,2*Math.PI);
 							ctx.fillStyle = 'red';
 							ctx.fill();
 							ctx.stroke();
@@ -551,7 +551,7 @@ define(function(require) {
 					else
 					{
 							ctx.beginPath();
-							ctx.arc(75+y1*35,75+x1*35,5,0,2*Math.PI);
+							ctx.arc(size+75+y1*35,75+x1*35,5,0,2*Math.PI);
 							ctx.fillStyle = 'DeepSkyBlue';
 							ctx.fill();
 							ctx.stroke();
@@ -577,7 +577,7 @@ define(function(require) {
 				else if(square[i][j]==2)
 				{
 //					draw(i,j,2);
-					ctx.fillText("2",75+(j*35)+7,75+(i*35)+27);
+					ctx.fillText("2",size+75+(j*35)+7,75+(i*35)+27);
 				}
 			}
 		}
