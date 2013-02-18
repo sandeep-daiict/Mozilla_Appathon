@@ -36,6 +36,7 @@ define(function(require) {
 //    var canvas = document.createElement("canvas");
 
 	var c=document.getElementById("myCanvas");
+	c.width=screen.width;
 	var ctx=c.getContext("2d");
 	
 	var flag=0;
